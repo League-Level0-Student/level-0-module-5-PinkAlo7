@@ -12,6 +12,7 @@ import processing.core.PImage;
  * In the setup() method:
  * 2. Set the size of your window to be a rectangle like in the recipe
  *    demonstration
+ *    
  * 3. Call the noFill() command so all the ellipses will be transparent
  *
  * In the draw() method:
@@ -39,23 +40,35 @@ import processing.core.PImage;
 public class AmazingRings extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
-
+int x = 176;
+int speed = 5;
     PImage waldo;
 
     @Override
     public void settings() {
-
+ size(WIDTH,HEIGHT);
     }
 
     @Override
     public void setup() {
-
+   
+   noFill();
     }
 
     @Override
     public void draw() {
-
-    }
+    	if(mousePressed){
+            println("Mouse’s x-position: " + mouseX + "\n" + "Mouse’s y-position: " + mouseY + "\n");
+        }
+    for(int i=300;i>0; i=-31) {
+ellipse(x, 276,10,10);
+x+=speed;
+}
+   if(x>width||x<0) {
+	   speed = -speed;
+   }
+}
+    
 
     static public void main(String[] args) {
         PApplet.main(AmazingRings.class.getName());

@@ -34,14 +34,17 @@ public class GoofyNames {
 				// 6. Even characters should be made uppercase and odd characters made lowercase
 				//    HINT: use Character.toUpperCase() or Character.toLowerCase()
 	                 cname = Character.toUpperCase(cname);
+	                 
 			} else {
 				cname = Character.toLowerCase(cname);
 			}
 				// 7. ADD the char to the end of the goofyName String
-
+                goofyName += cname;
 		
 		// 8. Use pop-up to show user their Goofy name
+                
           }
+          JOptionPane.showMessageDialog(null, goofyName);
 	}
 }
 
