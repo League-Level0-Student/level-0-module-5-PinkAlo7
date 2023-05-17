@@ -41,7 +41,10 @@ public class AmazingRings extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
 int x = 176;
+int x2 = 534;
 int speed = 5;
+int speed2 = -5;
+
     PImage waldo;
 
     @Override
@@ -57,17 +60,27 @@ int speed = 5;
 
     @Override
     public void draw() {
+    	background(255,255,255);
     	if(mousePressed){
             println("Mouse’s x-position: " + mouseX + "\n" + "Mouse’s y-position: " + mouseY + "\n");
         }
-    for(int i=300;i>0; i=-31) {
-ellipse(x, 276,10,10);
+    for(int i=300;i>0; i-=13) {
+ellipse(x, 276,i,i);
 x+=speed;
 }
    if(x>width||x<0) {
 	   speed = -speed;
    }
-}
+    
+ for(int i=300;i>0; i-=13) {
+    	ellipse(x2,276,i,i);
+    	x2+=speed2;
+    	if(x2<0||x2>width) {
+    		speed2 = -speed2;
+    	}
+    }
+    }
+ 
     
 
     static public void main(String[] args) {
