@@ -29,5 +29,26 @@ public static void main(String[] args) {
 	for(int i=0; i<=777; i+=7) {
 	System.out.println(i);
 	}
+	System.out.println("/////////////////////////////////////////////////////////////////////////////////////////////////////////");
+	for(int i=2012; i<=2023; i++) {
+	System.out.println("In " + i + ", I was " + (i-2012) );
+	}
+	System.out.println("/////////////////////////////////////////////////////////////////////////////////////////////////////");
+	for(int i=0; i<=2; i++) {
+	for(int k=0; k<=2; k++) {
+		System.out.println(i + " " + k);
+	}
+	}
+	for (int i=1; i<3; i++) {
+		for(int k=1; k<=9; k++) {
+			System.out.print(); 
+		}
+		System.out.println();
+	}
+	
+	
+		
+	
 }
 }
+
