@@ -39,9 +39,9 @@ public static void main(String[] args) {
 		System.out.println(i + " " + k);
 	}
 	}
-	for (int i=1; i<3; i++) {
-		for(int k=1; k<=9; k++) {
-			System.out.print(); 
+	for (int i=1; i<=7; i+=3) {
+		for(int k=0; k<=3; k++) {
+			System.out.print(k+i); 
 		}
 		System.out.println();
 	}
