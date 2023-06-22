@@ -62,26 +62,27 @@ public class ForLoopGauntlet {
 			System.out.println();
 		}
          System.out.println("///////////////////////////////////////////////////////////////////////////////////////////");
-       for(int f=1; f<2; f++) {
-         for(int i = 0; i<21;i++)
-        	 System.out.println();
+       for(int f=1; f<=6; f++) {
+         for(int i = 0; i<f;i++) {
+        	 System.out.print("* ");
+       }      
+         System.out.println();
        }
+       System.out.println("///////////////////////////////////////////////////////////////////////////////////////////");
+   
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
 	}
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
-         
 	}
-}
