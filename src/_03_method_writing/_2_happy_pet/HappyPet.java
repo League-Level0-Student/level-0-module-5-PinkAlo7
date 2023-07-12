@@ -93,9 +93,131 @@ public class HappyPet {
             		madShark();
             	}
             }
-            
-            
-          
+            int task2 = JOptionPane.showOptionDialog(null, "What would you like to do to make your " + pet + " happy?", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null,
+					new String[] { "Get pet/scratched", "Have a bath", "Swim" }, null);
+            if(task == 0) {
+            	if(pet.equals("parrot")) {
+            		happyParrot();
+            	}
+            }
+            if(task == 1) {
+            	if(pet.equals("parrot")) {
+            		madParrot();
+            	}
+            }
+            if(task == 2) {
+            	if(pet.equals("parrot")) {
+            		madParrot();
+            	}
+            }
+            if(task == 0) {
+            	if(pet.equals("panda")) {
+            		happyPanda();
+            	}
+            }
+            if(task == 1) {
+            	if(pet.equals("panda")) {
+            		happyPanda();
+            	}
+            }
+            if(task == 2) {
+            	if(pet.equals("panda")) {
+            		madPanda();
+            	}
+            }
+            if(task == 0) {
+            	if(pet.equals("wolf")) {
+            		happyWolf();
+            	}
+            }
+            if(task == 1) {
+            	if(pet.equals("wolf")) {
+            		madWolf();
+            	}
+            }
+            if(task == 2) {
+            	if(pet.equals("wolf")) {
+            		madWolf();
+            	}
+            }
+            if(task == 0) {
+            	if(pet.equals("shark")) {
+            		madShark();
+            	}
+            }
+            if(task == 1) {
+            	if(pet.equals("shark")) {
+            		madShark();
+            	}
+            }
+            if(task == 2) {
+            	if(pet.equals("shark")) {
+            		happyShark();
+            	}
+            }
+          int task3 = JOptionPane.showOptionDialog(null,"What woould you like to do to make you " + pet + " happy?", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null, 
+        		  new String[] { "Sleep", "Take a bath", "Eat again" }, null);
+          if (task == 0) {
+        	  if(pet.equals("parrot")) {
+        		  madParrot();
+        	  }
+          }
+          if(task == 1) {
+        	  if(pet.equals("parrot")) {
+        		  madParrot();
+        	  }
+       
+          }
+          if(task == 2) {
+        	  if(pet.equals("parrot")) {
+        		  happyParrot();
+        	  }
+          }
+          if(task == 0) {
+        	  if(pet.equals("panda")) {
+        		  madPanda();
+        	  }
+          }
+          if(task == 1) {
+        	  if(pet.equals("panda")) {
+        		  happyPanda();
+        	  }
+          }
+          if(task == 2) {
+        	  if(pet.equals("panda")) {
+        		  happyPanda();
+        	  }
+          }
+          if(task == 0) {
+        	  if(pet.equals("wolf")) {
+        		  happyWolf();
+        	  }
+          }
+          if(task == 1) {
+        	  if(pet.equals("wolf")) {
+        		  madWolf();
+        	  }
+          }
+          if(task == 2) {
+        	  if(pet.equals("wolf")) {
+        		  madWolf();
+        	  }
+          }
+          if(task == 0) {
+        	  if(pet.equals("shark")) {
+        		  happyShark();
+        	  }
+          }
+          if(task == 1) {
+        	  if(pet.equals("shark")) {
+        		  madShark();
+        	  }
+          }
+          if(task == 2) {
+        	  if(pet.equals("shark")) {
+        		  happyShark();
+        	  }
+          }
 
 		
 			// 6. Use user input to call the appropriate method created in step 5 below.
