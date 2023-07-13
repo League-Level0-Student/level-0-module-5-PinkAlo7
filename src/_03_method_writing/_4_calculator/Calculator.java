@@ -17,6 +17,15 @@ public class Calculator {
 		if(task == 3) {
 			add(number1,number2);
 		}
+		if(task == 2) {
+			subtract(number1, number2);
+		}
+		if(task == 1) {
+			multiply(number1,number2);
+		}
+		if(task == 0) {
+			divide(number1, number2);
+		}
 		// 4) Call the result() method and put the answer in a pop-up
 	}
 	
@@ -34,11 +43,14 @@ static void add(int number1, int number2) {
 }
 static void subtract(int number1, int number2) {
 	int difference = number1 - number2;
-	JOptionPane.showMessageDialog(null, number1+" - "+number2+"="+difference);
+	JOptionPane.showMessageDialog(null, number1+" - "+number2+" = "+difference);
 }
 static void multiply(int number1, int number2) {
 	int product = number1*number2;
-	JOptionPane.showMessageDialog(null, "");
+	JOptionPane.showMessageDialog(null, number1+" * "+number2+" = "+product);
 }
-	
+	static void divide(int number1, int number2) {
+		int quotient = number1/number2;
+		JOptionPane.showMessageDialog(null, number1+" / "+number2+" = "+quotient);
+	}
 }
