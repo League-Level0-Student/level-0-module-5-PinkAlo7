@@ -16,6 +16,7 @@ public class HappyPet {
 			// 4. Use showOptionDialog to ask the user what they want to do to make their pet happy
 			//    (eg: cuddle, food, water, take a walk, groom, clean up poop).
 			//    Make sure to customize the title and question too.
+       while(true) {
            String pet = "";
        
            if(petNumber == 0) {
@@ -95,129 +96,139 @@ public class HappyPet {
             }
             int task2 = JOptionPane.showOptionDialog(null, "What would you like to do to make your " + pet + " happy?", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null,
 					new String[] { "Get pet/scratched", "Have a bath", "Swim" }, null);
-            if(task == 0) {
+            if(task2 == 0) {
             	if(pet.equals("parrot")) {
             		happyParrot();
             	}
             }
-            if(task == 1) {
+            if(task2 == 1) {
             	if(pet.equals("parrot")) {
             		madParrot();
             	}
             }
-            if(task == 2) {
+            if(task2 == 2) {
             	if(pet.equals("parrot")) {
             		madParrot();
             	}
             }
-            if(task == 0) {
+            if(task2 == 0) {
             	if(pet.equals("panda")) {
             		happyPanda();
             	}
             }
-            if(task == 1) {
+            if(task2 == 1) {
             	if(pet.equals("panda")) {
             		happyPanda();
             	}
             }
-            if(task == 2) {
+            if(task2 == 2) {
             	if(pet.equals("panda")) {
             		madPanda();
             	}
             }
-            if(task == 0) {
+            if(task2 == 0) {
             	if(pet.equals("wolf")) {
             		happyWolf();
             	}
             }
-            if(task == 1) {
+            if(task2 == 1) {
             	if(pet.equals("wolf")) {
             		madWolf();
             	}
             }
-            if(task == 2) {
+            if(task2 == 2) {
             	if(pet.equals("wolf")) {
             		madWolf();
             	}
             }
-            if(task == 0) {
+            if(task2 == 0) {
             	if(pet.equals("shark")) {
             		madShark();
             	}
             }
-            if(task == 1) {
+            if(task2 == 1) {
             	if(pet.equals("shark")) {
             		madShark();
             	}
             }
-            if(task == 2) {
+            if(task2 == 2) {
             	if(pet.equals("shark")) {
             		happyShark();
             	}
             }
-          int task3 = JOptionPane.showOptionDialog(null,"What woould you like to do to make you " + pet + " happy?", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null, 
+          int task3 = JOptionPane.showOptionDialog(null,"What would you like to do to make you " + pet + " happy?", "Happy Pet", 0, JOptionPane.INFORMATION_MESSAGE, null, 
         		  new String[] { "Sleep", "Take a bath", "Eat again" }, null);
-          if (task == 0) {
+          if (task3 == 0) {
         	  if(pet.equals("parrot")) {
         		  madParrot();
         	  }
           }
-          if(task == 1) {
+          if(task3 == 1) {
         	  if(pet.equals("parrot")) {
         		  madParrot();
         	  }
        
           }
-          if(task == 2) {
+          if(task3 == 2) {
         	  if(pet.equals("parrot")) {
         		  happyParrot();
         	  }
           }
-          if(task == 0) {
+          if(task3 == 0) {
         	  if(pet.equals("panda")) {
         		  madPanda();
         	  }
           }
-          if(task == 1) {
+          if(task3 == 1) {
         	  if(pet.equals("panda")) {
         		  happyPanda();
         	  }
           }
-          if(task == 2) {
+          if(task3 == 2) {
         	  if(pet.equals("panda")) {
         		  happyPanda();
         	  }
           }
-          if(task == 0) {
+          if(task3 == 0) { 
         	  if(pet.equals("wolf")) {
         		  happyWolf();
         	  }
           }
-          if(task == 1) {
+          if(task3 == 1) {
         	  if(pet.equals("wolf")) {
         		  madWolf();
         	  }
           }
-          if(task == 2) {
+          if(task3 == 2) {
         	  if(pet.equals("wolf")) {
         		  madWolf();
         	  }
           }
-          if(task == 0) {
+          
+          if(task3 == 0) {
         	  if(pet.equals("shark")) {
         		  happyShark();
         	  }
           }
-          if(task == 1) {
+          if(task3 == 1) {
         	  if(pet.equals("shark")) {
         		  madShark();
         	  }
           }
-          if(task == 2) {
+          if(task3 == 2) {
         	  if(pet.equals("shark")) {
         		  happyShark();
         	  }
           }
+          if(happinessLevel == 3) {
+        	  JOptionPane.showMessageDialog(null,"You are a very great owner!");
+              break; 
+          }
+          else if(happinessLevel < 3) {
+        	 JOptionPane.showMessageDialog(null, "You are a horrible owner, your pet does not like you.");
+          }
+        }
+          
 
 		
 			// 6. Use user input to call the appropriate method created in step 5 below.
@@ -225,34 +236,43 @@ public class HappyPet {
 			// 7. If you determine the happiness level is large enough, tell the
 			//    user that he loves his pet and use break; to exit for loop.
 
+	
 	}
 
 	// 5. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
 static void madParrot() {
-JOptionPane.showMessageDialog(null, "Sqwuak! Sqwuak! Polly doesn't want to walk! - Polly Parrot");	
+JOptionPane.showMessageDialog(null, "Sqwuak! Sqwuak! Polly doesn't like that! - Polly Parrot");	
+happinessLevel--;
 }
 static void happyParrot() {
 	JOptionPane.showMessageDialog(null, "Thank you! Thank you owner! - Polly Parrot");
+	happinessLevel++;
 }
 static void madPanda() {
 	JOptionPane.showMessageDialog(null, "Panda doesn't want to do this! Panda angry! - Panda");
+	happinessLevel--;
 }
 static void happyPanda() {
 	JOptionPane.showMessageDialog(null, "Thank you so much owner! This is the best! - Panda");
+	happinessLevel++;
 }
 static void happyWolf() {
 	JOptionPane.showMessageDialog(null, "Thank you very much owner, this is fun! - Wolf");
+	happinessLevel++;
 }
 static void madWolf() {
-	JOptionPane.showMessageDialog(null, "I don't want to do this! This is thw worst! - Wolf");
+	JOptionPane.showMessageDialog(null, "I don't want to do this! This is the worst! - Wolf");
+	happinessLevel--;
 }
 static void happyShark() {
 	JOptionPane.showMessageDialog(null, "Thank you owner! I am so happy!");
+	happinessLevel++;
 }
 static void madShark() {
 	JOptionPane.showMessageDialog(null,"No, I don't want to do this!");
+	happinessLevel--;
 }
 
 
