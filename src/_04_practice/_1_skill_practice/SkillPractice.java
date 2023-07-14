@@ -7,6 +7,7 @@ SkillPractice skills = new SkillPractice();
 	skills.skill1();
 	skills.skill2();
 	skills.skill3();
+	skills.skill4();
 }
 void skill1() {
 	String dime = JOptionPane.showInputDialog("How many dimes do you have?");
@@ -41,9 +42,13 @@ void skill4() {
 		JOptionPane.showMessageDialog(null, "You live in America's Finest City.");
 	}else {
 		JOptionPane.showMessageDialog(null,"Move to San Diego.");
+   }
+	int cars = 2;
+	if(cars == 0) {
+		JOptionPane.showMessageDialog(null,"I bet you use public transportation.");
+	}
+	if(cars ==1) {
 	
-		
-		
 	}
 }
 }
