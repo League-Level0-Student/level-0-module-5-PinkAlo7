@@ -24,7 +24,7 @@ void skill1() {
 		}
 	}
 void skill2() {
-	for(int i=1; i<=30;i+=2) {
+	for(int i=0; i<=30;i+=3) {
 		System.out.println(i);
 	}
 }
@@ -39,16 +39,61 @@ void skill3() {
 void skill4() {
 	String city = JOptionPane.showInputDialog("What city do you live in?");
 	if(city.equalsIgnoreCase("San Diego")){
-		JOptionPane.showMessageDialog(null, "You live in America's Finest City.");
+		JOptionPane.showMessageDialog(null, "You live in America's Finest City.");   
 	}else {
 		JOptionPane.showMessageDialog(null,"Move to San Diego.");
-   }
-	int cars = 2;
+	}
+	
+  int cars = 3;
 	if(cars == 0) {
 		JOptionPane.showMessageDialog(null,"I bet you use public transportation.");
 	}
-	if(cars ==1) {
-	
+	if(cars == 1) {
+		JOptionPane.showMessageDialog(null, "Honda");
 	}
+	if(cars > 1) {
+		JOptionPane.showMessageDialog(null, "All of my cars together have 28 wheels");
+		}
+	String school = JOptionPane.showInputDialog("What school do you go to?");
+	if(school.equalsIgnoreCase("homeschool") || school.equalsIgnoreCase("I homeschool") || school.equalsIgnoreCase("I home school") || school.equalsIgnoreCase("home school"))  {
+		JOptionPane.showMessageDialog(null,"You homeschool?! I homeschool too! That's awsome!");
+	}else {
+	JOptionPane.showMessageDialog(null,school+" is a fantastic school!");
+	
+}
+
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
