@@ -45,6 +45,7 @@ void skill4() {
 	}
 	
   int cars = 3;
+  int cars4 = cars*4;
 	if(cars == 0) {
 		JOptionPane.showMessageDialog(null,"I bet you use public transportation.");
 	}
@@ -52,7 +53,7 @@ void skill4() {
 		JOptionPane.showMessageDialog(null, "Honda");
 	}
 	if(cars > 1) {
-		JOptionPane.showMessageDialog(null, "All of my cars together have 28 wheels");
+		JOptionPane.showMessageDialog(null, "All of my cars together have "+cars4+" wheels");
 		}
 	String school = JOptionPane.showInputDialog("What school do you go to?");
 	if(school.equalsIgnoreCase("homeschool") || school.equalsIgnoreCase("I homeschool") || school.equalsIgnoreCase("I home school") || school.equalsIgnoreCase("home school"))  {
